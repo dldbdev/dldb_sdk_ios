@@ -28,3 +28,4 @@
 .packages
 build/
 Pods/
+.DS_Store

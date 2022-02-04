@@ -1,6 +1,7 @@
 //created by christophe@dld.io
 
 import SwiftUI
+import SQLite
 
 @main
 struct ViewerOnPodApp: App {
