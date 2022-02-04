@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'ViewerOnPod' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ViewerOnPod
+  pod 'DLDB' , '0.9.7'
+  pod 'SQLite.swift', '~> 0.13.2'
+end
+
