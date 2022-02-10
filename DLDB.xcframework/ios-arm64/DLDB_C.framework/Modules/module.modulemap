@@ -1,0 +1,5 @@
+framework module DLDB_C {
+    umbrella header "DLDB_C.h"
+    export *
+    module * { export * }
+}

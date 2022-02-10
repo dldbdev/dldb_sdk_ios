@@ -6,7 +6,6 @@ target 'ViewerOnPod' do
   use_frameworks!
 
   # Pods for ViewerOnPod
-  pod 'DLDB' , '0.9.7'
-  pod 'SQLite.swift', '~> 0.13.2'
+  pod 'DLDB' , '0.9.8'
 end
 

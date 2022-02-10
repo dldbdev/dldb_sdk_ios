@@ -13,38 +13,32 @@ Welcom to the DLDB SDK beta for iOS
 ### In Swift projects
 
 #### using CocoaPods : 
-1. add `pod 'DLDB' , '0.9.7'` into your Podfile,
+1. add `pod 'DLDB' , '0.9.8'` into your Podfile,
 2. run `Pod install`
-
-3. Select `File > New... > File...` and then from `iOS/Source` choose `Header file` using the .h icon. You can give this header file any name you choose (it is called a "Bridging Header"). Add the following import directive into the "Bridging header"
-``` C
-#import "DLDB_C.h"
+3. Add the following import directive 
+``` swift
+import DLDB_C
 ```
-4. In `Build Settings`, update parameter `Objective-C Briding Header` with the path to the "Bridging header" file created in previous step. The path is relative to `$(SRCROOT)`.
-5. build the project
 ----
 #### manual installation
 1. download `DLDB.xcframework` and drag/drop the resulting folder into the `Frameworks` section of Project Explorer in Xcode
-![xcframework in Xcode](docs/Xcode_swift_manual.png)
-2. add `libz.tbd` and `libc++.tbd` in the `General/Frameworks, Libraries, and Embedded Content` section
-
-3. Select `File > New... > File...` and then from `iOS/Source` choose `Header file` using the .h icon. You can give this header file any name you choose (it is called a "Bridging Header"). Add the following import directive into this file :
-``` C
-#import "DLDB_C.h"
-```
-4. In `Build Settings`, update parameter `Objective-C Briding Header` with the path to the "Bridging header" file created in previous step. The path is relative to `$(SRCROOT)`.
+![xcframework in Xcode](docs/Xcode_drop_xcframework.png)
 
 -----
 ### In ObjectiveC projects
 
 #### using CocoaPods : 
-1. add `pod 'DLDB' , '0.9.7'` into your Podfile,
+1. add `pod 'DLDB' , '0.9.8'` into your Podfile,
 2. run `Pod install`
+3. Add the following import directive 
+``` objectiveC
+#import <DLDB_C/DLDB_C.h>
+```
 
 ----
 #### manual installation
-* download `DLDB.xcframework` and drag the resulting folder into the `Frameworks` section of Project Explorer in Xcode
-2. add `libz.tbd` and `libc++.tbd` in the `General/Frameworks, Libraries, and Embedded Content` section
+1. download `DLDB.xcframework` and drag the resulting folder into the `Frameworks` section of Project Explorer in Xcode
+![xcframework in Xcode](docs/Xcode_drop_xcframework.png)
 
 
 ## Getting started

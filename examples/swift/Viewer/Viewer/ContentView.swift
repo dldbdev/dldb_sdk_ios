@@ -1,6 +1,7 @@
 //created by christophe@dld.io
 
 import SwiftUI
+import DLDB_C
 
 struct ContentView: View {
     private let myDLDB: DLDB_C = DLDB_C()

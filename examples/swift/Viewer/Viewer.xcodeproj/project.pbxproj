@@ -11,10 +11,23 @@
 		C54E59B327AA696800D83EE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54E59B227AA696800D83EE6 /* ContentView.swift */; };
 		C54E59B527AA696A00D83EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54E59B427AA696A00D83EE6 /* Assets.xcassets */; };
 		C54E59B827AA696A00D83EE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54E59B727AA696A00D83EE6 /* Preview Assets.xcassets */; };
-		C54E59C027AA69BC00D83EE6 /* DLDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E59BF27AA69BC00D83EE6 /* DLDB.xcframework */; };
-		C54E59C627AAE55300D83EE6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E59C527AAE54200D83EE6 /* libz.tbd */; };
-		C54E59C827AAE56600D83EE6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E59C727AAE55D00D83EE6 /* libc++.tbd */; };
+		C5A9731727B42EDF00F03088 /* DLDB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A9731327B42E0600F03088 /* DLDB.xcframework */; };
+		C5A9731827B42EDF00F03088 /* DLDB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5A9731327B42E0600F03088 /* DLDB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5A9731927B42EDF00F03088 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5A9731827B42EDF00F03088 /* DLDB.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C54E59AD27AA696800D83EE6 /* Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +35,7 @@
 		C54E59B227AA696800D83EE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C54E59B427AA696A00D83EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54E59B727AA696A00D83EE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C54E59BF27AA69BC00D83EE6 /* DLDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DLDB.xcframework; path = ../../../DLDB.xcframework; sourceTree = "<group>"; };
-		C54E59C427AAE35D00D83EE6 /* DLDB_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDB_Bridging_Header.h; sourceTree = "<group>"; };
-		C54E59C527AAE54200D83EE6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		C54E59C727AAE55D00D83EE6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C5A9731327B42E0600F03088 /* DLDB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DLDB.xcframework; path = ../../../DLDB.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,9 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54E59C827AAE56600D83EE6 /* libc++.tbd in Frameworks */,
-				C54E59C027AA69BC00D83EE6 /* DLDB.xcframework in Frameworks */,
-				C54E59C627AAE55300D83EE6 /* libz.tbd in Frameworks */,
+				C5A9731727B42EDF00F03088 /* DLDB.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +74,6 @@
 				C54E59B227AA696800D83EE6 /* ContentView.swift */,
 				C54E59B427AA696A00D83EE6 /* Assets.xcassets */,
 				C54E59B627AA696A00D83EE6 /* Preview Content */,
-				C54E59C427AAE35D00D83EE6 /* DLDB_Bridging_Header.h */,
 			);
 			path = Viewer;
 			sourceTree = "<group>";
@@ -82,9 +89,7 @@
 		C54E59BE27AA69BC00D83EE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C54E59C727AAE55D00D83EE6 /* libc++.tbd */,
-				C54E59C527AAE54200D83EE6 /* libz.tbd */,
-				C54E59BF27AA69BC00D83EE6 /* DLDB.xcframework */,
+				C5A9731327B42E0600F03088 /* DLDB.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				C54E59A927AA696800D83EE6 /* Sources */,
 				C54E59AA27AA696800D83EE6 /* Frameworks */,
 				C54E59AB27AA696800D83EE6 /* Resources */,
+				C5A9731927B42EDF00F03088 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.dldb.example.ios.swift.Viewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Viewer/DLDB_Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.dldb.example.ios.swift.Viewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = Viewer/DLDB_Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
