@@ -13,7 +13,7 @@ DLDB SDK is written in C and has bindings to most common languages - works nativ
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
   spec.author             = { "Christophe" => "support@dldb.io" }
   spec.platform     = :ios, "11.0"
-  spec.vendored_frameworks = "DLDB.xcframework"
+  spec.vendored_frameworks = "DLDB_C.xcframework"
   spec.ios.libraries = 'c++', 'z'
   spec.source       = { :git => 'https://github.com/dldbdev/dldb_sdk_ios.git', :tag => "v#{spec.version}" }
 end
